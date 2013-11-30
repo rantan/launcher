@@ -1,2 +1,5 @@
 launcher.iml
 .idea
+
+*.js
+*.zip
