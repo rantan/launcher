@@ -14,11 +14,20 @@
     "content_scripts": [
         {
             "matches": ["<all_urls>"],
+            "css": [
+                "css/launcher.css",
+                "css/font-awesome.min.css"
+            ],
             "js": [
-                "hello.js"
+                "lib/jquery-2.0.3.min.js",
+                "lib/keypress-1.0.9.min.js",
+                "dialog.js"
             ],
             "all_frames": true,
             "run_at": "document_start"
         }
+    ],
+    "web_accessible_resources": [
+        "lib/jquery-2.0.3.min.map"
     ]
 }
